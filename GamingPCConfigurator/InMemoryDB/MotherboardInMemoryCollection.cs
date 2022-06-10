@@ -9,6 +9,7 @@ namespace GamingPCConfigurator.DL.InMemoryDB
         {
             new Motherboard()
             {
+                PartNumber = 1,
                 ModelName = "GIGABYTE B450M S2H",
                 Socket = "AM4",
                 RAMSlots = 2,
@@ -16,6 +17,7 @@ namespace GamingPCConfigurator.DL.InMemoryDB
             },
             new Motherboard()
             {
+                PartNumber = 2,
                 ModelName = "ASROCK B550M STEEL LEGEND",
                 Socket = "AM4",
                 RAMSlots = 4,
@@ -23,6 +25,7 @@ namespace GamingPCConfigurator.DL.InMemoryDB
             },
             new Motherboard()
             {
+                PartNumber = 3,
                 ModelName = "ASROCK B550 PRO4",
                 Socket = "AM4",
                 RAMSlots = 4,
@@ -30,6 +33,7 @@ namespace GamingPCConfigurator.DL.InMemoryDB
             },
             new Motherboard()
             {
+                PartNumber = 4,
                 ModelName = "ASUS PRIME X570-P",
                 Socket = "AM4",
                 RAMSlots = 4,
@@ -37,6 +41,7 @@ namespace GamingPCConfigurator.DL.InMemoryDB
             },
             new Motherboard()
             {
+                PartNumber = 5,
                 ModelName = "ASROCK B660M-HDV",
                 Socket = "LGA1700",
                 RAMSlots = 2,
@@ -44,6 +49,7 @@ namespace GamingPCConfigurator.DL.InMemoryDB
             },
             new Motherboard()
             {
+                PartNumber = 6,
                 ModelName = "GIGABYTE B660 GAMING X DDR4",
                 Socket = "LGA1700",
                 RAMSlots = 4,
@@ -51,6 +57,7 @@ namespace GamingPCConfigurator.DL.InMemoryDB
             },
             new Motherboard()
             {
+                PartNumber = 7,
                 ModelName = "ASROCK Z690 PHANTOM GAMING 4",
                 Socket = "LGA1700",
                 RAMSlots = 4,
@@ -58,4 +65,4 @@ namespace GamingPCConfigurator.DL.InMemoryDB
             },
         };
     }
-}
+}         
