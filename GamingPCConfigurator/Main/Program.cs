@@ -56,8 +56,41 @@ namespace GamingPCConfigurator.Main
             partsMatrix[0] = motherboardSpecs;
 
             Console.WriteLine("Now you have to choose a processor for your gaming computer. \r\n");
+            
+            for( int i = 0; i < CPUInMemoryCollection.CPUDB.Count; i++ )
+            {
+                Console.Write($"{CPUInMemoryCollection.CPUDB[i].PartNumber}, ");
+                Console.Write($"{CPUInMemoryCollection.CPUDB[i].Model}, ");
+                Console.Write($"Socket: {CPUInMemoryCollection.CPUDB[i].Socket}, ");
+                Console.Write($"Cores: {CPUInMemoryCollection.CPUDB[i].CoreCount}, ");
+                Console.Write($"Threads: {CPUInMemoryCollection.CPUDB[i].ThreadCount}, ");
+                Console.Write($"Performance Rating:{CPUInMemoryCollection.CPUDB[i].PerformanceRating}, ");
+                Console.Write($"Best Resolution: {CPUInMemoryCollection.CPUDB[i].BestResolution}, ");
+                Console.Write($"Price: {CPUInMemoryCollection.CPUDB[i].Price}; ");
+                Console.WriteLine();
+            }
+            Console.WriteLine($"Write the Part number of the processor that you have chosen. Its socket must be {motherboardSpecs[2]} and we recommend that its BestResolution is {chosenResolution}.");
+            int chosenProcessorNumber = int.Parse(Console.ReadLine()) - 1;
 
+            if (CPUInMemoryCollection.CPUDB[chosenProcessorNumber].Socket != MotherboardInMemoryCollection.MotherboardDB[chosenMotherboardNumber].Socket)
+            {
+                Console.WriteLine($"You have chosen a processor which is not for the right socket. Please select a processor which is for {motherboardSpecs[2]} socket");
+                chosenProcessorNumber = int.Parse(Console.ReadLine()) - 1;
+            }
 
+            string[] processorSpecs = new string[10];
+
+            processorSpecs[0] = CPUInMemoryCollection.CPUDB[chosenProcessorNumber].PartNumber.ToString();
+            processorSpecs[1] = CPUInMemoryCollection.CPUDB[chosenProcessorNumber].ManufacturerName;
+            processorSpecs[2] = CPUInMemoryCollection.CPUDB[chosenProcessorNumber].Model;
+            processorSpecs[3] = CPUInMemoryCollection.CPUDB[chosenProcessorNumber].Socket;
+            processorSpecs[4] = CPUInMemoryCollection.CPUDB[chosenProcessorNumber].PerformanceRating.ToString();
+            processorSpecs[5] = CPUInMemoryCollection.CPUDB[chosenProcessorNumber].BestResolution;
+            processorSpecs[6] = CPUInMemoryCollection.CPUDB[chosenProcessorNumber].CoreCount.ToString();
+            processorSpecs[7] = CPUInMemoryCollection.CPUDB[chosenProcessorNumber].ThreadCount.ToString();
+            processorSpecs[8] = CPUInMemoryCollection.CPUDB[chosenProcessorNumber].PowerDraw.ToString();          
+            processorSpecs[9] = CPUInMemoryCollection.CPUDB[chosenProcessorNumber].Price.ToString();
+            partsMatrix[1] = processorSpecs;
         }
     }
 }

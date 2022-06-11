@@ -9,18 +9,20 @@ namespace GamingPCConfigurator.DL.InMemoryDB
         {
             new CPU()
             {
+                PartNumber = 1,
                 ManufacturerName = "INTEL",
                 Model = "INTEL CORE I3-12100F",
                 Socket = "LGA1700",
                 PerformanceRating = 137,
                 BestResolution = "FHD",
+                CoreCount = 4,
                 ThreadCount = 8,
                 PowerDraw = 89,
-                IncludedFan = true,
                 Price = 239
             },
             new CPU()
             {
+                PartNumber = 2,
                 ManufacturerName = "AMD",
                 Model = "AMD RYZEN 5 5500",
                 Socket = "AM4",
@@ -29,11 +31,11 @@ namespace GamingPCConfigurator.DL.InMemoryDB
                 CoreCount = 6,
                 ThreadCount = 12,
                 PowerDraw = 65,
-                IncludedFan = true,
                 Price = 320
             },
              new CPU()
             {
+                 PartNumber = 3,
                 ManufacturerName = "INTEL",
                 Model = "INTEL CORE I5-12400F",
                 Socket = "LGA1700",
@@ -42,11 +44,11 @@ namespace GamingPCConfigurator.DL.InMemoryDB
                 CoreCount = 6,
                 ThreadCount = 12,
                 PowerDraw = 117,
-                IncludedFan = true,
                 Price = 413
             },
              new CPU()
              {
+                 PartNumber = 4,
                ManufacturerName = "AMD",
                 Model = "AMD RYZEN 5 5600",
                 Socket = "LGA1700",
@@ -55,11 +57,11 @@ namespace GamingPCConfigurator.DL.InMemoryDB
                 CoreCount = 6,
                 ThreadCount = 12,
                 PowerDraw = 74,
-                IncludedFan = true,
                 Price = 463
              },
              new CPU()
              {
+                 PartNumber = 5,
                 ManufacturerName = "AMD",
                 Model = "AMD RYZEN 7 5800X",
                 Socket = "AM4",
@@ -68,11 +70,11 @@ namespace GamingPCConfigurator.DL.InMemoryDB
                 CoreCount = 8,
                 ThreadCount = 16,
                 PowerDraw = 118,
-                IncludedFan = false,
                 Price = 765
              },
              new CPU()
              {
+                 PartNumber = 6,
                 ManufacturerName = "INTEL",
                 Model = "INTEL CORE I7-12700KF",
                 Socket = "LGA1700",
@@ -81,11 +83,11 @@ namespace GamingPCConfigurator.DL.InMemoryDB
                 CoreCount = 12,
                 ThreadCount = 20,
                 PowerDraw = 150,
-                IncludedFan = false,
                 Price = 966
              },
              new CPU()
              {
+                 PartNumber = 7,
                 ManufacturerName = "AMD",
                 Model = "AMD RYZEN 7 5800X3D",
                 Socket = "AM4",
@@ -94,7 +96,6 @@ namespace GamingPCConfigurator.DL.InMemoryDB
                 CoreCount = 8,
                 ThreadCount = 16,
                 PowerDraw = 110,
-                IncludedFan = false,
                 Price = 999
              }
         };
