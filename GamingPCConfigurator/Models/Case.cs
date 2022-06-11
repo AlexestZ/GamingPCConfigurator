@@ -2,7 +2,7 @@
 {
     public class Case
     {
-        public string ManufacturerName { get; set; }
+        public int PartNumber { get; set; }
         public string ModelName { get; set; }
         public string Color { get; set; }
         public string Size { get; set; }
