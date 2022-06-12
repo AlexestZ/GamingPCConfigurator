@@ -15,3 +15,5 @@ c) 4K - Ultra HD ( 3840 x 2160) - It is the biggest and best resolution for gami
 7. Choose the SSD - You have options ranging from 256 GB to 2000GB of storage. If you want faster Read/Write times of files you should consider choosing PCI-E Gen 4.0 SSD.
 8. Choose the PSU - It is the part which gives power to all components in the system. Decide whether you need power for the present configuration or you want to get something more powerful with the idea of upgrading to more power consuming components in the near future.
 9. Choose the Case - You have choice based on size and color. It is totally your personal preference.
+
+At the end you are able to see all of your components with each of their prices and the total price of the configurated gaming computer.
